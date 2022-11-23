@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Map Method</h2>
+        <p id="map"></p>
+    
+</body>
+
+    <script>
+        const kvArray = [
+  { key: 1, value: 10 },
+  { key: 2, value: 20 },
+  { key: 3, value: 30 },
+];
+
+const reformattedArray = kvArray.map(({ key, value }) => ({ [key]: value }));
+
+
+
+console.log(reformattedArray)
+    </script>
+
+    <script>
+        let users = [
+  {firstName : "Susan", lastName: "Steward"},
+  {firstName : "Daniel", lastName: "Longbottom"},
+  {firstName : "Jacob", lastName: "Black"}
+];
+
+let userFullnames = users.map(function(element){
+    return `${element.firstName} ${element.lastName}`;
+})
+document.getElementById('map').innerText = userFullnames
+
+console.log(userFullnames);
+    </script>
+</html>

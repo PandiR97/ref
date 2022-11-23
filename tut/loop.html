@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<div id="imageContainer"></div>
+
+<h2>JavaScript while Loop</h2>
+
+<div id="imageContainer1"></div>
+
+<h2>JavaScript  do while  Loop</h2>
+
+<div id="imageContainer2"></div>
+
+
+<script>
+var imgs = ['image/flower.jpg','image/flower1.jpg','image/flower2.jpg','image/flower3.jpg'];
+var container = document.getElementById('imageContainer');
+function loadPics(imgA){
+  for(var i=0; i< imgA.length; i++) {
+      var img = new Image();
+          img.src = imgA[i];
+          img.width = "100";
+          img.width = "100";
+          img.style.margin = "10px";
+          container.appendChild(img);
+  }
+}
+loadPics(imgs);
+</script>
+<script>
+    var imgs = ['image/flower.jpg','image/flower1.jpg','image/flower2.jpg','image/flower3.jpg'];
+var container = document.getElementById('imageContainer1');
+function loadPics(imgA){
+    var i=0
+  while(i< imgA.length) {
+        
+      var img = new Image();
+          img.src = imgA[i];
+          img.width = "100";
+          img.width = "100";
+          img.style.margin = "10px";
+          container.appendChild(img);
+    i++;
+  }
+}
+loadPics(imgs);
+
+
+</script>
+<script>
+    var imgs = ['image/flower.jpg','image/flower1.jpg','image/flower2.jpg','image/flower3.jpg'];
+var container = document.getElementById('imageContainer2');
+function loadPics(imgA){
+    var i=0
+   do{
+        
+      var img = new Image();
+          img.src = imgA[i];
+          img.width = "100";
+          img.width = "100";
+          img.style.margin = "10px";
+          container.appendChild(img);
+    i++;
+  }
+  while(i< imgA.length)
+}
+loadPics(imgs);
+
+
+</script>
+</body>
+</html>
